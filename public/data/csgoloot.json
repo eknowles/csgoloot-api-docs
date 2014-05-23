@@ -1,0 +1,89 @@
+{
+  "endpoints": [
+    {
+      "name": "API",
+      "methods": [
+        {
+          "MethodName": "GetNews",
+          "Synopsis": "Returns news and blog posts.",
+          "HTTPMethod": "GET",
+          "URI": "/GetNews/",
+          "RequiresOAuth": "N",
+          "parameters": [
+            {
+              "Name": "limit",
+              "Required": "N",
+              "Default": "",
+              "Type": "number",
+              "Description": "Limit results to return, defaults to 10"
+            }
+          ]
+        },
+        {
+          "MethodName": "GetArticle",
+          "Synopsis": "Returns a single news post.",
+          "HTTPMethod": "GET",
+          "URI": "/GetArticle/:id",
+          "RequiresOAuth": "N",
+          "parameters": [
+            {
+              "Name": "id",
+              "Required": "Y",
+              "Default": "",
+              "Type": "string",
+              "Description": ""
+            },
+            {
+              "Name": "limit",
+              "Required": "N",
+              "Default": "",
+              "Type": "number",
+              "Description": "Limit results to return, defaults to 10"
+            }
+          ]
+        },
+        {
+          "MethodName": "GetMatches",
+          "Synopsis": "Gets an overview of current open matches.",
+          "HTTPMethod": "GET",
+          "URI": "/GetMatches/",
+          "RequiresOAuth": "N",
+          "parameters": [
+            {
+              "Name": "limit",
+              "Required": "N",
+              "Default": "",
+              "Type": "number",
+              "Description": "Limit results to return, defaults to 10"
+            }
+          ]
+        },
+
+        {
+          "MethodName": "GetMatchInfo",
+          "Synopsis": "Gets a detailed result of a single match.",
+          "HTTPMethod": "GET",
+          "URI": "/GetMatchInfo/:id",
+          "RequiresOAuth": "N",
+          "parameters": [
+            {
+              "Name": "id",
+              "Required": "Y",
+              "Default": "",
+              "Type": "string",
+              "Description": "Identifier of the match."
+            },
+            {
+              "Name": "limit",
+              "Required": "N",
+              "Default": "",
+              "Type": "number",
+              "Description": "Limit results to return, defaults to 10"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

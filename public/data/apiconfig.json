@@ -1,0 +1,10 @@
+{
+  "csgoloot": {
+    "name": "CSGO LOOT API",
+    "protocol": "http",
+    "baseURL": "localhost:3000",
+    "publicPath": "/api",
+    "auth": "key",
+    "keyParam": "key"
+  }
+}
